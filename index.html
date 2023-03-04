@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+
+</head>
+ 
+<body>
+    <div class="container">
+
+        <div class="music-player">
+            <nav>
+                 <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                 </div>
+                 <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                 </div>
+
+            </nav>
+            <img src="music/moon.jpg" class="song-img">
+            <h1> Jamurathiri Jabilamma</h1>
+            <p> S. P. Balasubrahmanyam & K. S. Chithra</p>
+
+            <audio  id =song style ="height: 30px;border-radius: 10%; position: absolute; padding-top: 10px;" >
+                <source src="music\02 Jaamu Rathiri - SenSongsMp3.co.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="1" id="progress">
+
+            
+            <div class="controls">
+                
+                    <nav>
+                        <div class="circle">
+                        <i class="fa-solid fa-backward"></i> 
+                        </div>
+
+                        <div class="circle" style="background-color:#86d3ff; height: 50px; width: 50px; border-radius: 50%;">
+                            <div onclick="playpause()" style="height: 5px;"> 
+                                <i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                        </div>
+                       
+                        <div class="circle">
+                            <i class="fa-solid fa-forward"></i>
+                    
+                        </div>
+
+                    </nav>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+<script src="play.js"></script>
+
+</body>
+</html>
